@@ -1,0 +1,89 @@
+h1 {
+    color: #28609b;
+    font-size: 2.5em;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.status {
+    margin-top: 20px;
+    text-align: center;
+    padding: 10px;
+    color: #422aae;
+    background-color: #b9d2ea;
+}
+
+.parameters {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin: 30px;
+}
+
+.card {
+    background-color: #e8f1fa;
+    padding: 25px;
+    text-align: center;
+    border-radius: 12px;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+}
+.card {
+    background-color: #9abde0;
+    border-radius: 15px;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.12);
+}
+
+.dashboard-layout {
+    display: flex;
+    min-height: 100vh;
+}
+
+.sidebar {
+    width: 230px;
+    background-color: #292e35;
+    color: white;
+    padding: 25px 15px;
+    flex-shrink: 0;
+}
+
+.sidebar h2 {
+    text-align: center;
+    margin-bottom: 35px;
+    color: #58a6ff;
+}
+
+.sidebar nav {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: #c9d1d9;
+    padding: 12px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    background-color: #30363d;
+    color: white;
+}
+
+.main-content {
+    flex: 1;
+    padding: 25px;
+    background-color: #0d1117;
+    min-width: 0;
+}
