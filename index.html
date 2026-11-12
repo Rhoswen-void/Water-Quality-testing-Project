@@ -3,17 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-<link rel="stylesheet" href="style.css">
+    <title>AQUASENSE - Water Quality Dashboard</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <div class="dashboard-layout">
 
     <!-- Sidebar -->
     <aside class="sidebar">
-
         <h2>AQUASENSE</h2>
-
         <nav>
             <a href="#dashboard">Dashboard</a>
             <a href="#history">History</a>
@@ -22,53 +20,51 @@
             <a href="#settings">Settings</a>
             <a href="#about">About</a>
         </nav>
-
     </aside>
+
+    <!-- Main Content Area -->
     <main class="main-content">
+        <div class="container">
+            <h1><b>AQUASENSE:</b>
+                <br/>
+               <i>Smart Drinking Water Quality Monitoring</i>
+            </h1>
+            <div>
+              <h2 id="water-status" class="status">WATER STATUS: waiting for data...</h2>  
+            </div>      
+        </div>                  
 
-<div class="container">
-    <h1><b>AQUASENSE:</b>
-        <br/>
-       <i>Smart Drinking Water Quality Monitoring</i></h1>
-<div>
-  <h2 class="status">WATER STATUS: waiting for data...</h2>  
-</div>      
-</div>              
-<div class="parameters">
-    <div class="card">
-        <h3>TDS</h3>
-        <span id="tds-value">--</span>
-        <p>mg/L</p>
-    </div>
+        <div class="parameters">
+            <div class="card">
+                <h3>TDS</h3>
+                <span id="tds-value">--</span>
+                <p>ppm</p>
+            </div>
 
-    <div class="card">
-        <h3>pH</h3>
-        <span id="ph-value">--</span>
-    </div>
+            <div class="card">
+                <h3>pH</h3>
+                <span id="ph-value">--</span>
+                <!-- Button to trigger random pH generation -->
+                <button id="generate-ph" style="margin-top: 10px; padding: 5px 10px; cursor: pointer;">Generate pH</button>
+            </div>
 
-    <div class="card">
-        <h3>Turbidity</h3>
-        <span id="turbidity-value">--</span>
-        <p>NTU</p>
-    </div>
+            <div class="card">
+                <h3>Turbidity</h3>
+                <span id="turbidity-value">--</span>
+                <p>NTU</p>
+            </div>
 
-    <div class="card">
-        <h3>Temperature</h3>
-        <span id="temperature-value">--</span>
-        <p>°C</p>
-    </div>
-</div> 
-<div class="pH">
-    <h2>pH Value</h2>
-    <p id="phValue">Click the button to generate pH </p>
-    <button id="generate-ph"> Click to Generate pH</button>
-</div> 
+            <div class="card">
+                <h3>Temperature</h3>
+                <span id="temperature-value">--</span>
+                <p>°C</p>
+            </div>
+        </div>  
     </main>
 </div>
 
-   <script src="script.js"></script>
-
-
+<!-- Link to your external JavaScript file -->
+<script src="script.js"></script>
 
 </body>
 </html>
